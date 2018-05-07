@@ -10,4 +10,4 @@ This is a simple exercise designed to give you practice using GitHub. Additional
 
 * How might modern data science be disruptive to your industry? 
 
-Agriculture is one of the economic sectors where data has been more scarce and were the use of technology has been lower. The explosion of data coming from sensors and the application of technology to the colllection, storage and analysis of this data, could generate knowledge and insights that are groundbreaking to agriculture in terms of the increasing of yields, profit and economic, social and environmental sustainability.
+Agriculture is one of the economic sectors where data has been more scarce and were the use of technology has been lower. The explosion of data coming from sensors and the application of technology to the colllection, storage and analysis of this data, could generate knowledge and insights that are groundbreaking to agriculture in terms of the increase of yields, profit and economic, social and environmental sustainability.
