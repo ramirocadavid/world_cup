@@ -1,10 +1,10 @@
 mkdir s1
 mkdir s1\s3
 mkdir s1\s2
-touch s1\s3\conf.txt
-touch s1\s2\text_chunk1.txt
+type nul > s1\s3\conf.txt
+type nul > s1\s2\text_chunk1.txt
 mkdir s1\s2\Advanced
-touch s1\s2\Advanced\text_chunk2.txt
+type nul > s1\s2\Advanced\text_chunk2.txt
 @echo I love bash scripting. >> s1\s3\conf.txt
 @echo A whole new world >> s1\s2\text_chunk1.txt
 @echo A new fantastic point of view >> s1\s2\text_chunk1.txt
