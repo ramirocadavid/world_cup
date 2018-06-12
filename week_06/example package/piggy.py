@@ -1,0 +1,2 @@
+def oink():
+	print("Oink!!")
