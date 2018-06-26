@@ -1,0 +1,131 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body class="tracker-iframe embedded"><link href="chrome-extension://mkbmdcokiphabelhplbmfbmpmcgmaope/tracker.css" rel="stylesheet" type="text/css"><div>
+			<div class="error-block"><span>Opps, you'll need to log this timer first</span></div>
+			
+			<div id="timer-wrapper">
+				<header class="timer-heading">
+			 		<span class="roll-up-down">
+			 		  <!--Icon element-->
+						<i class="icon-down-open"></i>
+			 		</span>
+					<span class="client-name">No timer running...</span>
+					<span class="time">
+							<span class="hours"></span>
+			 				<span class="minutes"></span>
+			 				<span class="seconds"></span>
+          </span>
+					<span class="open-window"><i class="icon-externalLink"></i></span>
+				</header>
+				
+				<main>
+			 		<div class="log-time-controls hidden">
+			 			<div class="duration-input">
+			 				<button class="control control-decrement">
+								<i class="icon-minusCircle"></i>
+							</button>
+
+							<input type="text" class="input-time" value="1h 00m" maxlength="8">
+
+							<button class="control control-increment">
+								<i class="icon-plusCircle"></i>
+							</button>
+						</div>
+
+						<div class="start-datetime">
+						  <!--Datepicker component-->
+			        <input type="text" class="start-date" value="09/26/2017" maxlength="10"> 
+
+							<span>at</span>
+							<input type="text" class="start-time" value="1:38pm" maxlength="8">
+						</div>
+					</div>
+			
+			 		<!--timer-component-->
+          <div class="timer-component">
+						<div class="time-duration">
+			 				<span class="hours"></span>
+			 				<span class="minutes"></span>
+			 				<span class="seconds"></span>
+			 			</div>
+						
+			 			<div class="start-datetime">
+			 			<span class="error-tooltip">Enter a start time before </span>
+			 				<span>started at</span>
+							
+			 				<input type="text" class="start-time-at" maxlength="8">
+			 			</div>
+						
+			 			<div class="time-controls">
+			 				<button class="discard-control">Discard</button>
+							
+			 				<button class="control control-start">
+			 					<i class="icon-play"></i>
+			 					<i class="icon-pause-1"></i>
+			 				</button>
+							
+			 				<button class="log-time-control">Log Time</button>
+			 			</div>
+			 		</div>
+					
+					<!--classes: .clients-view/.form-view-->
+					<div class="main-content clients-view">
+					<div class="views-container">
+					  <!--Select client component-->
+						<div class="client-select">
+							<h3 class="client-select-heading">Choose recent</h3>
+							
+							<ul class="client-list">
+									<!--Render clients list hire-->
+							</ul>
+							
+							<p class="add-new">or <a href="http://web.archive.org/web/20160816041541/http://learnpythonthehardway.org/book/ex43.html#" class="add-new-client">Add New...</a></p>
+						</div>
+
+						<div class="client-options-form">
+							<div class="selection client-selection">
+								<input type="text" placeholder="Type to add a client" value="">
+								
+								<!--classes: .active - to open dropdown-->
+								<ul class="dropdown-list dropdown-list__client"></ul>
+							</div>
+							
+							<div class="selection project-selection">
+								<input type="text" placeholder="Type to add a project">
+								
+								<ul class="dropdown-list"></ul>
+							</div>
+							<div class="selection service-selection">
+
+								<input type="text" placeholder="Type to add a service">
+								
+								<ul class="dropdown-list"></ul>
+								
+							</div>
+							
+							<textarea placeholder="Add notes" class="timer-notes"></textarea>
+							
+							<label class="check-label">Billable
+								<input type="checkbox" checked="" class="billable-check">
+								
+								<div class="check-indicator">
+									<i class="icon-ok"></i>
+								</div>
+							</label>
+						</div>
+						</div>
+					</div>
+			 	</main>
+				
+				<footer>
+					<div class="timer-popup-controls">
+						<button class="btn btn-default discard-changes cancel-btn">Cancel</button>
+
+						<button class="btn btn-success log-changes log-time-btn">Log Time</button>
+					</div>
+				</footer>
+				<div id="fresh-books-preloader-overlay">
+				  <div class="preloader-img"><img src="chrome-extension://mkbmdcokiphabelhplbmfbmpmcgmaope/assets/img/freshbooks-preloader.svg" alt=""></div>
+        </div>
+			</div>
+		</div></body></html>
