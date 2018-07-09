@@ -42,7 +42,3 @@ class GaltonBox:
                     box_row.append('-')
             box_status.append(box_row)
         return box_status
-
-
-
-        
