@@ -373,7 +373,7 @@ class Kick:
             print()
             print("-" * 73)
             print()
-            if match.kicks_num % 2 == 0:
+            if match.kicks_num % 2 != 0:
                 input("Press Enter to next kick ")
             else:
                 input("Press Enter to next round ")
@@ -413,18 +413,21 @@ class Strategy:
 
 # User interface
 def start():
+    """
+    Controls the flow of the game by displaying the main menu options and
+    graphical elements.
+    """
     print()
     options_1 = {
         1: '[1] Create team', 2: '[2] List teams', 3: '[3] Create player',
         4: '[4] List players', 5: '[5] Start match', 6: '[6] Quick match',
-        7: '[7] Quit game'
+        7: '[7] Image and text credits', 8: '[8] Quit game'
         }
 
     while True:
         print("-" * 87)
         print(title_text)
         print(title_image)
-        print("'ASCII' images taken from http://www.chris.com/ascii")
         print()
         print("-" * 87)
         print("MAIN MENU")
@@ -512,8 +515,16 @@ def start():
                 match = Match.quick_match()
                 Kick.start_kicks(match)
             
-            # Quit game
+            # Credits
             elif option_1 == 7:
+                print("'ASCII' images taken from http://www.chris.com/ascii")
+                print("'ASCII' text taken from http://patorjk.com/software/taag/")
+                print()
+                input("Press Enter to Main menu")
+                
+            
+            # Quit game
+            elif option_1 == 8:
                 print()
                 print("Closing game")
                 for i in range(1, 4):
