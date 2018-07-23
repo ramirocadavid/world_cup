@@ -1,0 +1,51 @@
+user@RCM MINGW64 ~
+$ cd "Google Drive/2-Ciencia_de_datos/UC_Berkeley/3-W200-Python/Assignments/assignments_upstream_summer18/SUBMISSIONS"
+
+user@RCM MINGW64 ~/Google Drive/2-Ciencia_de_datos/UC_Berkeley/3-W200-Python/Assignments/assignments_upstream_summer18/SUBMISSIONS (master)
+$ cd project_2
+
+user@RCM MINGW64 ~/Google Drive/2-Ciencia_de_datos/UC_Berkeley/3-W200-Python/Assignments/assignments_upstream_summer18/SUBMISSIONS/project_2 (master)
+$ git clone "https://github.com/MIDS-INFO-W18/Group-JAR-Project2"
+Cloning into 'Group-JAR-Project2'...
+warning: You appear to have cloned an empty repository.
+
+user@RCM MINGW64 ~/Google Drive/2-Ciencia_de_datos/UC_Berkeley/3-W200-Python/Assignments/assignments_upstream_summer18/SUBMISSIONS/project_2 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .ipynb_checkpoints/
+        Group-JAR-Project2/
+        Notes and resources.ipynb
+        api-guide.pdf
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@RCM MINGW64 ~/Google Drive/2-Ciencia_de_datos/UC_Berkeley/3-W200-Python/Assignments/assignments_upstream_summer18/SUBMISSIONS/project_2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in SUBMISSIONS/project_2/.ipynb_checkpoints/Notes and resources-checkpoint.ipynb.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in SUBMISSIONS/project_2/Notes and resources.ipynb.
+The file will have its original line endings in your working directory.
+
+user@RCM MINGW64 ~/Google Drive/2-Ciencia_de_datos/UC_Berkeley/3-W200-Python/Assignments/assignments_upstream_summer18/SUBMISSIONS/project_2 (master)
+$ git commit -m "Added empty project folder"
+[master 52232af] Added empty project folder
+ 5 files changed, 317 insertions(+)
+ create mode 100644 SUBMISSIONS/project_2/.ipynb_checkpoints/Notes and resources-checkpoint.ipynb
+ create mode 100644 SUBMISSIONS/project_2/.ipynb_checkpoints/desktop.ini
+ create mode 100644 SUBMISSIONS/project_2/Group-JAR-Project2/desktop.ini
+ create mode 100644 SUBMISSIONS/project_2/Notes and resources.ipynb
+ create mode 100644 SUBMISSIONS/project_2/api-guide.pdf
+
+user@RCM MINGW64 ~/Google Drive/2-Ciencia_de_datos/UC_Berkeley/3-W200-Python/Assignments/assignments_upstream_summer18/SUBMISSIONS/project_2 (master)
+$ git push origin master
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 926.13 KiB | 21.05 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/MIDS-INFO-W18/RamiroCadavidREPO
+   e82ecd6..52232af  master -> master
