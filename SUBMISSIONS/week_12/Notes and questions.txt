@@ -1,0 +1,14 @@
+NOTES
+
+17A: Individual contributions
+28A: Refunds to individuals
+18: Transfers from committees
+
+Would be great to know age
+
+QUESTIONS
+
+2a) asks for number of contributions, but specifies contb_receipt_amt
+
+
+
