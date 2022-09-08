@@ -45,24 +45,23 @@ def main():
     players = t1_players + t2_players
 
     while True:
+        call(["clear"])
         print(title_text, "\n\n")
         print(title_image)
         for option in options_1.values():
             print(option, end='\n')
         print()
         option_entered = input("Enter option: ")
-        call(["clear"])
         print()
 
         try:
             option_1 = int(option_entered)
             # Create team
             if option_1 == 1:
-                # print("-" * 73)
-                # print("CREATE TEAM")
-                # print("-" * 73)
                 while True:
                     try:
+                        call(["clear"])
+                        print("CREATE TEAM")
                         print(team_image)
                         team_name = input("Enter team name: ")
                         Team(team_name)
@@ -74,20 +73,15 @@ def main():
                         call(["clear"])
                     except Exception as e:
                         print("\n", e)
-                print("-" * 73)
-                call(["clear"])
             
             # List teams
             elif option_1 == 2:
-                # print("-" * 73)
-                # print("-" * 73)
-                print(team_image)
-                print("TEAMS")
-                Team.list_teams()
                 call(["clear"])
+                Team.list_teams()
             
             # Create player
             elif option_1 == 3:
+                call(["clear"])
                 while True:
                     try:
                         # Enter player information
@@ -117,11 +111,12 @@ def main():
             
             # List players
             elif option_1 == 4:
-                Player.list_players()
                 call(["clear"])
+                Player.list_players()
             
             # match
             elif option_1 == 5:
+                call(["clear"])
                 teams = Team.teams
                 players = Player.players
                 match = Match.match_setup(teams, players)
@@ -129,6 +124,7 @@ def main():
             
             # Start quick match
             elif option_1 == 6:
+                call(["clear"])
                 t1 = Team.teams[0]
                 t1_players = [p for p in Player.players if p.team == t1]
                 t2 = Team.teams[1]
@@ -138,6 +134,7 @@ def main():
             
             # Credits
             elif option_1 == 7:
+                call(["clear"])
                 print("'ASCII' images taken from http://www.chris.com/ascii")
                 print("'ASCII' text taken from http://patorjk.com/software/taag/")
                 print()
@@ -146,17 +143,19 @@ def main():
             
             # Quit game
             elif option_1 == 8:
+                call(["clear"])
                 print()
-                print("Closing game")
+                print("Finishing game")
                 for i in range(1, 4):
                     time.sleep(0.5)
                     print('.')
                 print()
-                print("Game closed")
+                print("Game finished")
                 time.sleep(1)
                 call(["clear"])
                 exit()
                 break
+
         except ValueError:
             print()
             print('-' * 24)

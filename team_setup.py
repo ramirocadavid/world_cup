@@ -24,9 +24,10 @@ class Team:
     @classmethod
     def list_teams(cls):
         """List the teams available, formatted"""
+        print("TEAMS")
+        print(team_image)
         for team in cls.teams:
             print("  ", team.name, end='\n')
-        # print("-" * 73)
         print()
         input("Press Enter to Main menu")
 
@@ -64,9 +65,7 @@ class Player:
     @classmethod
     def list_players(cls):
         """Lists all the players created in this class, formatted"""
-        # print("-" * 73)
         print("PLAYERS")
-        # print("-" * 73)
         print(player_image)
         print("    {0:<25s} {1:<10s} {2:<35s}".format("NAME", "TYPE", "TEAM"))
         for player in cls.players:

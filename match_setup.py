@@ -1,6 +1,7 @@
 # Match setup and configuration classes
 
 from subprocess import call
+from images import *
 
 class Match:
     """
@@ -48,9 +49,9 @@ class Match:
         within each team
         """
         # Select teams
-        print("-" * 73)
+        print(team_image)
         print("SELECT TEAMS!")
-        print("-" * 73)
+        print()
         while True:
             for t in range(len(teams)):
                 print('[', t, ']: ', teams[t].name, sep='', end='\n')
@@ -74,10 +75,9 @@ class Match:
             break
         
         # Select Team 1 players
-        print()
-        print("-" * 73)
         print("CHOOSE TEAM 1 PLAYERS (", team_1.name.capitalize(), ")", sep='')
-        print("-" * 73)
+        print(player_image)
+        print()
         while True:
             # Request input
             print()
@@ -117,10 +117,9 @@ class Match:
             break
         
         # Select Team 2 players
-        print()
-        print("-" * 73)
         print("CHOOSE TEAM 2 PLAYERS (", team_2.name.capitalize(), ")", sep='')
-        print("-" * 73)
+        print(player_image)
+        print()
         while True:
             # Request input
             print()
